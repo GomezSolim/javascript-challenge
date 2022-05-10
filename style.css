@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #A9D7E9;    
+}
+
+.title {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+form{
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 800px;
+    padding: 25px 14px 25px 14px;
+}
+
+h1{
+    text-align: center;
+}
+
+.btn {
+    background: #6BA2CE;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 17px;
+    align-items: center;
+}
+
+form>div{
+    display: flex;
+    align-content: stretch;
+    flex-direction: column;
+    width: 100%;
+}
+form>div>div{
+    width: 70px;
+}
+
+input, select{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+}
+label{
+    vertical-align: 10px;
+    
+}
+form :nth-child(5)>:nth-child(2)>label, form> :nth-child(6)>:nth-child(2)>label{
+    vertical-align: center;
+    margin-left: 7px;
+}
+
+input {
+    padding: 10px;
+  border: none;
+}
+
+form .form-item {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+form .form-item label {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+form .form-item label {
+    flex-basis: 50%;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+form .form-item .form-item-input, .form-item-select, .form-item-textarea, .form-item-radio {
+    flex-basis: 50%;
+}
