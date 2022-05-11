@@ -13,7 +13,7 @@ body{
     margin-bottom: 20px;
 }
 
-form{
+section{
     background: #F3F3F3;
     display: flex;
     align-items: center;
@@ -38,13 +38,13 @@ h1{
     align-items: center;
 }
 
-form>div{
+section>div{
     display: flex;
     align-content: stretch;
     flex-direction: column;
     width: 100%;
 }
-form>div>div{
+section>div>div{
     width: 70px;
 }
 
@@ -57,7 +57,7 @@ label{
     vertical-align: 10px;
     
 }
-form :nth-child(5)>:nth-child(2)>label, form> :nth-child(6)>:nth-child(2)>label{
+section :nth-child(5)>:nth-child(2)>label, section> :nth-child(6)>:nth-child(2)>label{
     vertical-align: center;
     margin-left: 7px;
 }
@@ -67,7 +67,7 @@ input {
   border: none;
 }
 
-form .form-item {
+section .form-item {
     display: flex;
     justify-content: center;
     width: 60%;
@@ -75,17 +75,17 @@ form .form-item {
     margin-top: 20px;
 }
 
-form .form-item label {
+section .form-item label {
     flex-basis: 50%;
     text-align: right;
 }
 
-form .form-item label {
+section .form-item label {
     flex-basis: 50%;
     align-items: flex-start;
     margin-right: 20px;
 }
 
-form .form-item .form-item-input, .form-item-select, .form-item-textarea, .form-item-radio {
+section .form-item .form-item-input, .form-item-select, .form-item-textarea, .form-item-radio {
     flex-basis: 50%;
 }

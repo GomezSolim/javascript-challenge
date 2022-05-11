@@ -12,29 +12,30 @@
 <body>
     <h1 class="title">Formulaire DWWM</h1>
 
-    <form method="post" action="">
+    <section>
 
         <div>
             <div class="form-item">
                 <label for="nom">Nom</label>
-                <input class="form-item-input input-1" type="text" value="name" id="name" name="name" placeholder="Entrez votre nom">
+                <input class="form-item-input input-1" type="text"  id="name" name="name" placeholder="Entrez votre nom">
             </div>
 
             <div class="form-item">
                 <label for="email">Email</label>
-                <input class="form-item-input input-2" type="email" value="email" name="email" id="email" placeholder="Entrez votre email"><br><br>
+                <input class="form-item-input input-2" type="email"  name="email" id="email" placeholder="Entrez votre email"><br><br>
             </div>
 
             <div class="form-item">
                 <label for="sat">Indiquez votre satisfaction au cours de 1 à 10</label>
-                <input class="form-item-input" type="number" value="satis" name="satis" id="satsi" placeholder="numéro de 1 à 10"><br>
+                <input class="form-item-input" type="number"  name="satis" min="1" max="10" id="satis" placeholder="numéro de 1 à 10"><br>
                 <br>
             </div>
 
             <div class="form-item">
                 <label for="coach">Qui est votre coach ?</label>
 
-                <select class="form-item-select" aria-valuemax="coach" name="coach" id="coach">
+                <select class="form-item-select"  name="coach" id="coach" required>
+                    <option/>
                     <option value="Birante">Birante</option>
                     <option value="Mamadou">Mamadou</option>
                     <option value="Mail">Malik</option>
@@ -87,14 +88,17 @@
             </div>
         </div>
 
-        <!-- <button class="submit" type="submit" value="Envoyer">Verifier</button> -->
+        <button class="btn btn-success" onclick="verify()">Verifier</button> 
 
-        <input class="btn btn-success" type="button" value="Verifier" onclick="verify();">
+<!--         <input class="btn btn-success" type="button" value="Verifier" onclick="verify();">
+ -->
+            
+        <br>
 
-
-            <p class="text"></p>
-            <br>
-    </form>
+        <div id="info">
+    
+        </div>
+    </section>
 
     <script src="main.js"  type="text/javascript"></script>
 </body>
