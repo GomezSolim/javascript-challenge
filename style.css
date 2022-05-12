@@ -89,3 +89,12 @@ section .form-item label {
 section .form-item .form-item-input, .form-item-select, .form-item-textarea, .form-item-radio {
     flex-basis: 50%;
 }
+.col-md-12 {
+    padding: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+
+}
